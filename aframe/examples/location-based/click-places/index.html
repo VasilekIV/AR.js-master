@@ -13,7 +13,8 @@
         AFRAME.registerComponent('clicker', {
             init: function() {
                 this.el.addEventListener('click', e => {
-                    alert('Сайт музея');
+                    let zapros=confirm("Посмотреть воспоминание?");
+                    alert(zapros);
                     window.location = 'https://xn--80aakpmqy.xn--p1ai/';
                 });
             }
